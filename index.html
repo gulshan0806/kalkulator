@@ -1,0 +1,35 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Simple calculator</h2>
+        <input id="num1" type="text" placeholder="sonni yozing"><br>
+        <input id="num2" type="text" placeholder="sonni yozing">
+
+        <div id="sel" class="buttons">
+            <button type="button" onclick="calc('+')">+</button>
+            <button type="button" onclick="calc('-')">-</button>
+            <button type="button" onclick="calc('*')">*</button>
+            <button type="button" onclick="calc('/')">/</button>
+            <button type="button" onclick="calc('^')">^</button>
+            <button type="button" onclick="calc('%')">%</button>
+            <button type="button" onclick="calc('max')">max</button>
+            <button type="button" onclick="calc('min')">min</button>
+            <button type="button" onclick="calc('ildiz')">ildiz</button>
+        </div>
+
+        <div class="footer">
+            <p id="res">Result: </p>
+            <button onclick="clr()" id="clear" type="button">Clear</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
